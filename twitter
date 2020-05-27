@@ -1,0 +1,21 @@
+using System;
+
+class Program
+
+{
+
+static void Main()
+
+{
+
+string s;
+
+s = Console.ReadLine();//taking user input
+
+if(s.Length>140)Console.Write("The message is too long\n");
+
+else Console.Write("The message is okay");
+
+}
+
+}
