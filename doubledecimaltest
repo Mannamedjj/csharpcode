@@ -1,0 +1,12 @@
+using System;
+class DoubleDecimalTest
+{
+static void Main ()
+{
+double d =8.5070592e+37f;
+decimal dec = 8.5070592e+37M;// this will cause outofRange error.
+
+Console.WriteLine ("Double Value== " + d);
+Console.WriteLine ("Decimal Value==" + dec);//printting dec will cause outofRange error.
+}
+}
