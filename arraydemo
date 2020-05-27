@@ -1,0 +1,89 @@
+using System.IO;
+
+using System;
+
+class ArrayDemo
+
+{
+
+static void Main()
+
+{
+
+int[] nums={7,6,3,2,10,8,4,5,9,1};
+
+//presenting menu to user
+
+while(true){
+
+Console.WriteLine("1.Print array from start\n2.Print array from last"
+
++"\n3.Enter the index (0-9)\n4.any other int value to exit.");
+
+Console.Write("Select the option : ");
+
+//getting user choice
+
+int intTemp = Convert.ToInt32(Console.ReadLine());
+
+//comparing the choicd using if
+
+if(intTemp==1){
+
+for(int i=0;i<10;i++){
+
+Console.Write(nums[i]+" ");
+
+}
+
+Console.Write("\n\n");
+
+}
+
+else if(intTemp==2){
+
+for(int i=9;i>=0;i--){
+
+Console.Write(nums[i]+" ");
+
+}
+
+Console.Write("\n\n");
+
+}
+
+else if(intTemp==3){
+
+Console.WriteLine("Enter the index that you want to print");
+
+int index=Convert.ToInt32(Console.ReadLine());
+
+if(index<0 || index >9){
+
+Console.WriteLine("Invalid index");
+
+continue;
+
+}
+
+Console.WriteLine("On index {0} value is {1}\n",index,nums[index]);
+
+}
+
+//exit the application once user enter any other int
+
+//apart from 1, 2,3
+
+else{
+
+Console.WriteLine("Exiting Application");
+
+break;
+
+}
+
+}
+
+}
+
+}
