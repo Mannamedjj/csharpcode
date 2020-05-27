@@ -1,0 +1,17 @@
+using System;
+
+public class CheckCredit
+{
+    public static void Main(string[] args)
+    {
+        double price = Convert.ToDouble(Console.ReadLine());
+        if (price <= 8000)
+        {
+            Console.WriteLine("Approved");
+        }
+        else
+        {
+            Console.WriteLine("You have exceeded the credit limit");
+        }
+    }
+}
