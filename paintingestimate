@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter length of the room :");
+            int length = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter width of the room :");
+            int width = Convert.ToInt32(Console.ReadLine());
+            double cost = ((length * 9 * 2) + (width * 9 * 2)) * 6;
+           
+            Console.WriteLine("The cost of painting your room is : " + String.Format("{0:0.00}", cost));
+        }
+    }
+}
