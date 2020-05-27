@@ -1,0 +1,21 @@
+using System.IO;
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter grade point average: ");
+        double grade = Convert.ToDouble(Console.ReadLine());
+        Console.Write("Enter the Test Score point: ");
+        double score = Convert.ToDouble(Console.ReadLine());
+      
+        if(grade >= 3.0 && score >=60)
+         Console.WriteLine("Student has been Accepted");
+        else if(grade <3.0 && score >=80)
+        Console.WriteLine("Student has been Accepted");
+        else
+        Console.WriteLine("Student has been Rejected");
+       
+    }
+}
