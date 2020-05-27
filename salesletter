@@ -1,0 +1,45 @@
+using System;
+
+using System.Collections.Generic;
+
+using System.Linq;
+
+using System.Text.RegularExpressions;
+
+namespace MySalesLetter
+
+{
+
+    public class SalesLetter
+
+    {
+
+        public static void DisplayContactInfo()
+
+        {
+
+            Console.WriteLine("Cellphone Number Number : 9876543210");
+
+            Console.WriteLine("Landline Number : 0123456789");
+
+            Console.WriteLine("Email ID : chandler@sarcasm.com");
+
+        }
+
+       
+
+        public static void Main(string[] args)
+
+        {
+
+            DisplayContactInfo();
+
+            DisplayContactInfo();
+
+            DisplayContactInfo();
+
+        }
+
+    }
+
+}
