@@ -1,0 +1,28 @@
+using System;
+//declare the class hurricane
+class hurricane
+{
+//Main started and declared
+static void Main()
+{
+  
+   Console.Write("Enter the wind speed in miles per hour: ");
+   //input taken
+   string uws = Console.ReadLine();
+   //input converted from string to integer Convert.ToInt32() function
+   int ws = Convert.ToInt32(uws);
+   //checks the value of ws for the wind categories
+   if(ws<74)
+       Console.WriteLine("Not a hurricane");
+   if(ws>=74 && ws<96)
+       Console.WriteLine("This is a category 1 hurricane");
+   if(ws>=96 && ws<111)
+       Console.WriteLine("This is a category 2 hurricane");
+   if(ws>=111 && ws<130)
+       Console.WriteLine("This is a category 3 hurricane");
+   if(ws>=130 && ws<157)
+       Console.WriteLine("This is a category 4 hurricane");
+   if(ws>157)
+       Console.WriteLine("This is a category 5 hurricane");
+}
+}
