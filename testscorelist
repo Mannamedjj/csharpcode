@@ -1,0 +1,79 @@
+using System;
+
+  
+
+public class TestScoreList
+
+{
+
+public static void Main()
+
+{ //Declaring a testScores array of type int of size 8 to store 8 test scores
+
+int[] testScores = new int[8];
+
+//Declaring and initializing total score to 0. This will stores sum of all scores
+
+int totalScores = 0;
+
+//Declaring and initializing average scores to 0. This will store average scores
+
+double averageScores = 0;
+
+  
+
+//Iterating 8 times and asking user for the score input
+
+for(int i =0; i<8; i++){
+
+//Prompting for the input
+
+Console.WriteLine("Enter Test #"+i+" Score: ");
+
+//Converting into int and then storing into the testscores array
+
+testScores[i] = Convert.ToInt32(Console.ReadLine());
+
+}
+
+  
+
+//Calculating the total sum of test scores by iterating over the testscores array
+
+for(int i=0; i<8; i++)
+
+//Calcualting total sum here
+
+totalScores += testScores[i];
+
+  
+
+//Calculating average if test scores here, by dividing total sum by total no. of test scores
+
+//Typecasting to double because integer is getting divided by an integer hence result will
+
+//Sore as an integer thats why it was truncating decimal places
+
+averageScores = (double) totalScores/8;
+
+  
+
+//Dislaying how far is the test score formt he average
+
+for(int i=0; i<8; i++){
+
+//Calculating far by subtracting averagescores from the testscores
+
+double far = testScores[i] - averageScores;
+
+//Displaying the far value here
+
+Console.WriteLine("Test #"+i+" "+testScores[i]+": From average: "+far);
+
+}
+
+  
+
+}
+
+}
